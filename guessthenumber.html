@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Guess the number game</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    
+    <div class="divBox">
+      <h3>Guess a number in the range of 1 and 100. You have 7 chances to guess </h1>
+    </div>
+
+    <div class="divBox">
+      Enter a guess: 
+      <input type="text" id="txtGuess"></input>
+      <input type="button" id='btnSubmit' value="Am I right?"></input>
+    </div>
+
+    <div id="divPrevGuess" class="divBox">
+    </div>
+    
+    <div id='divGuessStatus' class="divBox"></div>
+
+    <div id="divLastGuessMsg" class="divBox"></div>
+ 
+    <div id='divGuessCount' class="divBox"></div>
+
+    <div id='divStartNewGame' class="divBox" style="display:none;">
+      <input type="button" id="btnStartNewGame" value="Start new game" onclick="restartGuess();"></input>
+    </div>
+
+    <script src="scripts/guessnumber.js"></script>
+
+  </body>
+</html>
